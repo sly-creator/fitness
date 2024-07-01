@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Exercises</title>
+    <script src="/javascript/utils.js" defer></script>
+    <script src="/javascript/add/exercisehistory.js" defer></script>
+    <link rel="stylesheet" href="/styles/global.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Add exerciseHistory</h1>
+
+      <form id="add-form" class="form-style">
+        <label for="sets">Sets</label>
+        <input min="1" type="number" id="sets" name="sets" required />
+
+        <label for="weight">weight</label>
+        <input min="1" type="number" id="weight" name="weight" required />
+
+            <label for="exercise">exercise</label>
+            <select id="exercise" name="exercise"></select>
+          
+        <button type="submit">Add exercisehistory</button>
+      </form>
+    </main>
+  </body>
+</html>

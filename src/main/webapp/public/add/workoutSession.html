@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add workout-session</title>
+    <script src="/javascript/utils.js" defer></script>
+    <script src="/javascript/add/workout-session.js" defer></script>
+    <link rel="stylesheet" href="/styles/global.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Add workout-session</h1>
+
+        <form id="add-form" class="form-style">
+            <label for="startDate">startDate</label>
+            <input type="date" id="startDate" name="startDate" required />
+    
+            <label for="endDate">endDate</label>
+            <input type="date" id="endDate" name="endDate" required></input>
+    
+            <label for="workout">workout</label>
+            <select id="workout" name="workout"></select>
+    
+        <button type="submit">Add workout-session</button>
+      </form>
+    </main>
+  </body>
+</html>

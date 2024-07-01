@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Exercises</title>
+    <script src="/javascript/utils.js" defer></script>
+    <script src="/javascript/add/exercise.js" defer></script>
+    <link rel="stylesheet" href="/styles/global.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Add Exercise</h1>
+
+      <form id="add-form" class="form-style">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="description">Description</label>
+        <textarea id="description" name="description" required></textarea>
+
+        <label for="image">Image</label>
+        <input type="text" id="image" name="image" />
+
+        <label for="sets">Sets</label>
+        <input min="1" type="number" id="sets" name="sets" required />
+
+        <label for="reps">Reps</label>
+        <input min="1" type="number" id="reps" name="reps" required />
+
+        <label for="muscleType">Muscle Type</label>
+        <select id="muscleType" name="muscleType" required>
+          <option value="chest">Chest</option>
+        </select>
+
+        <label for="exerciseType">Exercise Type</label>
+        <select id="exerciseType" name="exerciseType" required>
+          <option value="pushup">Pushup</option>
+        </select>
+
+        <button type="submit">Add Exercise</button>
+      </form>
+    </main>
+  </body>
+</html>
